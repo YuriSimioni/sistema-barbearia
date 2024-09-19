@@ -20,7 +20,6 @@ form {
     transform: translate(-50%, -50%);
     background: white;
     gap: 50px;
-    animation: vai 1s ease;
 }
 
 
@@ -75,14 +74,37 @@ form {
 }
 
 
-@keyframes vai {
+
+
+
+.errorMsg {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border-radius: 4px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 135, 135);
+    border: 3px solid rgb(230, 47, 47);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    animation: popup 1s ease;
+}
+
+
+@keyframes popup {
     from {
         opacity: 0;
-        top: 43%;
+        top: 0%;
 
     }
     to {
         opacity: 1;
-        top: 50%;
+        top: 10%;
     }
 }
