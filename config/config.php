@@ -8,7 +8,7 @@ class BancoDeDados {
     private $host = "localhost";
     private $user = "root";
     private $pass = "";
-    private $bd = "vitalmed";
+    private $bd = "barbearia";
     
     private $pdo;
     public $msgErro = "";
@@ -34,7 +34,7 @@ class BancoDeDados {
 
 class Projeto {
 
-    private $nomeProjeto = "VitalMed";
+    private $nomeProjeto = "Classic Barber";
     
     function getNomeProjeto() {
         return $this->nomeProjeto;
@@ -54,6 +54,8 @@ $Projeto = new Projeto();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/ico/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/global.css">
+
+    <title><?php echo $Projeto->getNomeProjeto();?></title>
     
 
 </head>
